@@ -1,9 +1,9 @@
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../data/models/recipes_model.dart';
+import '../data/models/recipe_model.dart';
 import '../constants/constants.dart';
 import '../views/home/recipe_view_model.dart';
+import '../views/recipe_details_screen.dart';
 
 class RecipeTile extends StatelessWidget {
   final RecipeModel recipe;
@@ -17,6 +17,14 @@ class RecipeTile extends StatelessWidget {
     return Card(
       margin: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       child: ListTile(
+        onTap: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (_) => RecipeDetailsScreen(recipe: recipe),
+            ),
+          );
+        },
         leading: Image.network(
           recipe.imageUrl,
           width: 60,

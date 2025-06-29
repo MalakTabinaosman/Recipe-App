@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../constants/constants.dart';
-import '../views/home/home_sreen.dart';
+import 'home/home_screen.dart';
 import '../widgets/on_boarding_contant.dart';
 
 class OnboardingScreen extends StatefulWidget {
@@ -26,12 +26,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
               onPageChanged: (index) => setState(() => isLastPage = index == 1),
               children: const [
                 OnboardingContent(
-                  image: 'assets/onboard1.png',
+                  image:
+                      'assets/pngtree.png',
                   title: AppConstants.onboardingTitle1,
                   desc: AppConstants.onboardingDesc1,
                 ),
                 OnboardingContent(
-                  image: 'assets/onboard2.png',
+                  image: 'assets/vecteezy_fast-food-meal-with_25065315.png',
                   title: AppConstants.onboardingTitle2,
                   desc: AppConstants.onboardingDesc2,
                 ),
@@ -53,9 +54,13 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   );
                 }
               },
-              child: Text(isLastPage ? 'Get Started' : 'Next'),
+              child: Text(
+                isLastPage ? 'Get Started' : 'Next',
+                style: const TextStyle(fontSize: 20),
+              ),
             ),
-          )
+          ),
+          SizedBox(height: 20),
         ],
       ),
     );

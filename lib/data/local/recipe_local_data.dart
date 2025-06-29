@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:recipe_app/data/models/recipes_model.dart';
+import 'package:recipe_app/data/models/recipe_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 

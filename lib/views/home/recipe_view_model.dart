@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipe_app/data/local/recipe_local_data.dart';
-import 'package:recipe_app/data/models/recipes_model.dart';
+import 'package:recipe_app/data/models/recipe_model.dart';
 
 
 import '../../services/recipe_service.dart';

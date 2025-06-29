@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:recipe_app/data/models/recipes_model.dart';
+import 'package:recipe_app/data/models/recipe_model.dart';
 import '../constants/constants.dart';
 
 class RecipeService {
